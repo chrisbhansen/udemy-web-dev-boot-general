@@ -7,10 +7,38 @@
 <body>
 
 <h1>Login</h1>
+
+<!-- action - where the form sends data to -->
+<!-- method - what HTTP method (GET/POST) -->
+
+<!-- Version 1 -->
+
+<!-- <form action="http://www.wikipedia.org" method="GET">
+
+	<label>
+		Username:
+		<input name="username" type="text" placeholder="username">
+	</label>
+	<label>
+		Password:
+		<input name="password" type="password" placeholder="password">
+	</label>
+	
+	<input type="submit" name="Submit">
+</form> -->
+
+<!-- Version 2 -->
+
 <form action="http://www.wikipedia.org" method="GET">
-	<input name="username" type="text" placeholder="username">
-	<input name="password" type="password" placeholder="password">
+
+	<label for="username">Username:</label>
+	<input id="username" name="username" type="text" placeholder="username">
+	
+	<label for="password">Password:</label>
+	<input id="password" name="password" type="password" placeholder="password">
+	
 	<input type="submit" name="Submit">
 </form>
+
 </body>
 </html>
