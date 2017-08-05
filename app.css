@@ -1,11 +1,19 @@
 h1 {
-	color: #000000;
+	color: rgba(0, 200, 100, 0.8);
+	border: 8px solid rgb(255, 100, 0);
+}
+
+h4 {
+	color: rbg(255, 100, 80);
+}
+
+body {
+	background: url(https://www.psdmockups.com/wp-content/uploads/2013/03/bamboo-wood-flooring-texture.jpg);
+	background-repeat: no-repeat;
+	background-size: 
 }
 
 li {
 	color: #4B0082;
 }
 
-h4 {
-	color: #FF1493;
-}
