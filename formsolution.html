@@ -29,12 +29,12 @@
 	<label for="email">Email: </label>
 	<input type="email" name="email" placeholder="your email" required>
 	<label for="password">Password: </label>
-	<input type="password" name="password" minlength="5" maxlength="8">
+	<input type="password" name="password" pattern=".{5,8}" required title="Password must be between 5 and 8 characters">
 </div>
 
 <div>
 	<label for="birthday">Birthday: </label>
-	<select>
+	<select name="month">
 		<option>Month</option>
 		<option>January</option>
 		<option>February</option>
@@ -49,7 +49,7 @@
 		<option>November</option>
 		<option>December</option>
 	</select>
-	<select>
+	<select name="day">
 		<option>Day</option>
 		<option>01</option>
 		<option>02</option>
@@ -62,7 +62,7 @@
 		<option>09</option>
 		<option>10</option>
 	</select>
-		<select>
+	<select name="year">
 		<option>Year</option>
 		<option>2017</option>
 		<option>2016</option>
