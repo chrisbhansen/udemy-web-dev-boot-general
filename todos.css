@@ -1,0 +1,15 @@
+body {
+	background: orange;
+}
+
+li {
+	border: 2px solid red;
+}
+
+#selected {
+	background-color: yellow;
+}
+
+.completed {
+	text-decoration: line-through;
+}
