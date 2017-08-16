@@ -20,7 +20,7 @@ startNum = 300;
 endNum = 333;
 
 while(startNum <= endNum) {
-	if ((startNum % 2) !== 0) {
+	if (startNum % 2 !== 0) {
 		console.log(startNum)
 	}
 	startNum++;
@@ -31,7 +31,7 @@ startNum = 5;
 endNum = 50;
 
 while(startNum <= endNum) {
-	if (((startNum % 5) === 0) && ((startNum % 3) === 0)) {
+	if (startNum % 5 === 0 && startNum % 3 === 0) {
 		console.log(startNum)
 	}
 	startNum++;
