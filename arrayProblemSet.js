@@ -5,12 +5,14 @@ var newArray = [];
 printArrayProblemTitle("Print Reverse");
 printStartingArray();
 printFinishedArray(printReverse());
+printDivider();
 
-
-
-
-
-
+// isUniform()
+testArray = [1,1,1,1,1,1,1,1];
+printArrayProblemTitle("Is Uniform");
+printStartingArray();
+printFinishedArray(isUniform());
+printDivider();
 
 // business logic functions
 function printReverse() {
@@ -18,6 +20,18 @@ function printReverse() {
 		newArray.push(testArray[i]);
 	}
 	return newArray;
+}
+
+function isUniform() {
+	var check = testArray[0];
+	for(var i = 0; i < testArray.length; i++) {
+		if (check === testArray[i]) {
+			// keep going
+		} else {
+			return false;
+		}
+	}
+	return true;
 }
 
 // display functions
@@ -31,4 +45,8 @@ function printStartingArray() {
 
 function printFinishedArray(calledFunction) {
 	console.log("Finished array: " + calledFunction)
+}
+
+function printDivider() {
+	console.log("********************************");
 }
