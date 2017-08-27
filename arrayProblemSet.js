@@ -38,33 +38,49 @@ function printReverse(arr) {
 
 function isUniform(arr) {
 	var check = arr[0];
-	for(var i = 0; i < arr.length; i++) {
-		if (check === arr[i]) {
-			// keep going
-		} else {
+	for(var i = 1; i < arr.length; i++) {
+		if (check !== arr[i]) {
 			return false;
 		}
 	}
 	return true;
 }
 
+// function sumArray(arr) {
+// 	var sum = 0;
+// 	for(var i = 0; i < arr.length; i++) {
+// 		sum = sum + arr[i];
+// 	}
+// 	return sum;
+// }
+
 function sumArray(arr) {
 	var sum = 0;
-	for(var i = 0; i < arr.length; i++) {
-		sum = sum + arr[i];
-	}
+	arr.forEach(function(e){
+		sum += e;
+	});
 	return sum;
 }
 
+// function max(arr) {
+// 	var max = Number.NEGATIVE_INFINITY;
+// 	for(var i = 0; i < arr.length; i++) {
+// 		if (max <= arr[i]) {
+// 			max = arr[i];
+// 		} else {
+// 			// keep going - do nothing to "max"
+// 		}
+// 	}
+// 	return max;
+// }
+
 function max(arr) {
-	var max = Number.NEGATIVE_INFINITY;
-	for(var i = 0; i < arr.length; i++) {
-		if (max <= arr[i]) {
-			max = arr[i];
-		} else {
-			// keep going - do nothing to "max"
+	var max = arr[0];
+	arr.forEach(function(e){
+		if(e > max){
+			max = e;
 		}
-	}
+	});
 	return max;
 }
 
