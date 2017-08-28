@@ -31,7 +31,6 @@ movies.print = function(){
 	});
 }
 
-
 // movies.forEach(function(movie){
 // 	var result = "You have ";
 // 	if(movie.hasWatched){
